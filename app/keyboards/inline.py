@@ -1,4 +1,5 @@
-from typing import List, Dict
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from typing import Dict, List
+
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from .base import InlineKeyboard

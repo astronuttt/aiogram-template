@@ -1,9 +1,8 @@
-from aiogram.dispatcher.middlewares import BaseMiddleware
-from aiogram.dispatcher.handler import current_handler, CancelHandler
 from aiogram import types
+from aiogram.dispatcher.handler import CancelHandler, current_handler
+from aiogram.dispatcher.middlewares import BaseMiddleware
 
-from app.main import redis, log
-
+from app.main import log, redis
 
 THROTTLING_COUNT = "throttling_count"
 THROTTLING_DURATION = "throttling_duration"

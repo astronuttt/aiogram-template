@@ -1,15 +1,15 @@
+import re
+from collections import Mapping
 from typing import (
-    Dict,
     Any,
     Callable,
+    Dict,
     List,
-    get_type_hints,
-    get_origin,
     Union,
     get_args,
+    get_origin,
+    get_type_hints,
 )
-from collections import Mapping
-import re
 
 
 def type_cast(node: str, node_type):

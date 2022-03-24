@@ -1,11 +1,11 @@
-from aiogram import Bot, Dispatcher
-from aiogram.utils.executor import Executor
-from aiogram.contrib.fsm_storage.redis import RedisStorage2
 import aioredis
-from .logger import get_logger
+from aiogram import Bot, Dispatcher
+from aiogram.contrib.fsm_storage.redis import RedisStorage2
+from aiogram.utils.executor import Executor
 
 from app import config
 
+from .logger import get_logger
 
 log = get_logger(__name__)
 
@@ -65,9 +65,8 @@ async def on_polling_shutdown(dispatcher: Dispatcher):
 
 def start():
     """setup the parts for application to start"""
+    from app import filters, middlewares
     from app.models import database
-    from app import middlewares
-    from app import filters
 
     database.setup(executor)
     middlewares.setup(dp)

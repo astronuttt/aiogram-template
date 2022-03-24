@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
-from typing import List, Dict
+from typing import Dict, List
+
 from aiogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

@@ -6,10 +6,7 @@ def setup(dp: Dispatcher):
     example:
     dp.filter_factory.bind(Filter)
     """
-    from app.filters.filters import (
-        IsSuperUser,
-        CallbackDataPrefix,
-    )
+    from app.filters.filters import CallbackDataPrefix, IsSuperUser
 
     dp.filters_factory.bind(IsSuperUser)
     dp.filters_factory.bind(CallbackDataPrefix)

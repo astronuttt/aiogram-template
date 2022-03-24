@@ -1,10 +1,10 @@
 from aiogram.dispatcher import FSMContext
-from aiogram.types import Message
 from aiogram.dispatcher.filters import CommandStart
-from app.main import dp, log
+from aiogram.types import Message
 
-from app.models.user import User
 from app.keyboards.regular import MainMenuKeyboard
+from app.main import dp, log
+from app.models.user import User
 
 
 @dp.message_handler(CommandStart(), state="*")

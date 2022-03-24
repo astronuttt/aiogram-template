@@ -1,12 +1,13 @@
-from typing import Dict, Any, List
-from aiogram import types
-from aiogram.dispatcher.middlewares import BaseMiddleware
-from aiogram.dispatcher.handler import current_handler
-from app.utils.typing import extract_vars_from_callback_data
-from app.utils.context import current_user
-from app.main import log
+from typing import Any, Dict, List
 
+from aiogram import types
+from aiogram.dispatcher.handler import current_handler
+from aiogram.dispatcher.middlewares import BaseMiddleware
+
+from app.main import log
 from app.models.user import User
+from app.utils.context import current_user
+from app.utils.typing import extract_vars_from_callback_data
 
 
 class ACLMiddleware(BaseMiddleware):

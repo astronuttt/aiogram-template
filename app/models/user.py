@@ -1,5 +1,6 @@
-from app.models.database import TimedBase
 from tortoise import fields
+
+from app.models.database import TimedBase
 
 
 class User(TimedBase):

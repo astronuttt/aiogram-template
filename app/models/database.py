@@ -1,11 +1,10 @@
+from aiogram import Dispatcher
+from aiogram.utils.executor import Executor
 from tortoise import Tortoise
 from tortoise.fields import DatetimeField
 from tortoise.models import Model
-from aiogram import Dispatcher
-from aiogram.utils.executor import Executor
 
 from app import config
-
 
 db = Tortoise()
 
