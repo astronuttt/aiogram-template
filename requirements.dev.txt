@@ -1,0 +1,6 @@
+-r requirements.txt
+
+flake8==4.0.1
+black==22.1.0
+isort==5.10.1
+aiohttp-autoreload==0.0.1

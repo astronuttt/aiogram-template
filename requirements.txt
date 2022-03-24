@@ -1,0 +1,6 @@
+aiogram==2.19
+aioredis==2.0.1
+tortoise-orm==0.18.1
+aerich==0.6.2
+python-dotenv==0.19.2
+aiomysql==0.0.22
